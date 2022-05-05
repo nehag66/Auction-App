@@ -1,5 +1,19 @@
-.logo {
-    margin: 30px 50px;
-    width: fit-content;
+.card {
+    background-color: bisque;
+    width: 20rem;
+    height: 18rem;
+    margin: 10px;
+}
+.mainContent {
+    display: flex;
+    margin: 20px;
+}
+.itemsDiv {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85vw;
+}
+.hotItems {
     background-color: aquamarine;
+    width: 20vw;
 }
