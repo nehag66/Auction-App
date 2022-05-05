@@ -10,16 +10,16 @@ export class HttpServiceService {
 
   constructor(private http: HttpClient, public router: Router) { }
 
-  getData(url:string, params: {}) { 
+  getData(url:string) { 
     return new Promise((resolve, reject) => {
       const headers = new HttpHeaders({ 
-        'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8',
+        'Authorization' : localStorage.getItem("token_type") + ' ' + localStorage.getItem("refresh_token")
       })
-      const options = {
+     /*  const options = {
         headers: headers,
         params: params
-     };
-     this.http.get(url, options).subscribe(
+     }; */
+     this.http.get(url).subscribe(
       res => resolve(res),
      )
     })

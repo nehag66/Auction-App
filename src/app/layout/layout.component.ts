@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from 'src/services/common.service';
 
 @Component({
   selector: 'app-layout',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
-  constructor() { }
+  constructor( public common: CommonService) { }
 
   ngOnInit(): void {
+
+    this.common.getAllProducts()
   }
 
 }
