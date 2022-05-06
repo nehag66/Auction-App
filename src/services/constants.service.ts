@@ -6,7 +6,7 @@ import { environment } from 'src/environments/environment';
 })
 export class ConstantsService {
 
-  getAllProducts = environment["stagingUrl"]+"items?sort=-id"
+  getAllProducts = environment["stagingUrl"]+"items?sort=id"
 
   constructor() { }
 }
