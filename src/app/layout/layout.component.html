@@ -3,162 +3,22 @@
         <app-nav-bar></app-nav-bar>
     </div>
     <div class="mainContent">
-      <div class="itemsDiv">
+      <div class="itemsDiv" *ngFor="let product of this.common.productDetail; let i = index">
         <mat-card class="card">
           <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>title</mat-card-title>
-            <mat-card-subtitle>subtitle</mat-card-subtitle>
+            <!-- <div mat-card-avatar class="example-header-image"></div> -->
+            <mat-card-title>{{product.name}}</mat-card-title>
+            <mat-card-subtitle>{{product.brandName}}</mat-card-subtitle>
           </mat-card-header>
-          <!-- <img mat-card-image [src]="member.url" alt="Photo of "> -->
+            {{product.marketValue}}
           <mat-card-content>
             <p>
-                this is the content 
+              Description: {{product.description}}  ||
+              Total Bids: {{product.bids}}  ||
+              Last Bid Date: {{product.lastBidDate}}
             </p>
           </mat-card-content>
-        </mat-card>
-        <mat-card class="card">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>title</mat-card-title>
-            <mat-card-subtitle>subtitle</mat-card-subtitle>
-          </mat-card-header>
-          <!-- <img mat-card-image [src]="member.url" alt="Photo of "> -->
-          <mat-card-content>
-            <p>
-                this is the content 
-            </p>
-          </mat-card-content>
-        </mat-card>
-        <mat-card class="card">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>title</mat-card-title>
-            <mat-card-subtitle>subtitle</mat-card-subtitle>
-          </mat-card-header>
-          <!-- <img mat-card-image [src]="member.url" alt="Photo of "> -->
-          <mat-card-content>
-            <p>
-                this is the content 
-            </p>
-          </mat-card-content>
-        </mat-card>
-        <mat-card class="card">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>title</mat-card-title>
-            <mat-card-subtitle>subtitle</mat-card-subtitle>
-          </mat-card-header>
-          <!-- <img mat-card-image [src]="member.url" alt="Photo of "> -->
-          <mat-card-content>
-            <p>
-                this is the content 
-            </p>
-          </mat-card-content>
-        </mat-card>
-        <mat-card class="card">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>title</mat-card-title>
-            <mat-card-subtitle>subtitle</mat-card-subtitle>
-          </mat-card-header>
-          <!-- <img mat-card-image [src]="member.url" alt="Photo of "> -->
-          <mat-card-content>
-            <p>
-                this is the content 
-            </p>
-          </mat-card-content>
-        </mat-card>
-        <mat-card class="card">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>title</mat-card-title>
-            <mat-card-subtitle>subtitle</mat-card-subtitle>
-          </mat-card-header>
-          <!-- <img mat-card-image [src]="member.url" alt="Photo of "> -->
-          <mat-card-content>
-            <p>
-                this is the content 
-            </p>
-          </mat-card-content>
-        </mat-card>
-        <mat-card class="card">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>title</mat-card-title>
-            <mat-card-subtitle>subtitle</mat-card-subtitle>
-          </mat-card-header>
-          <!-- <img mat-card-image [src]="member.url" alt="Photo of "> -->
-          <mat-card-content>
-            <p>
-                this is the content 
-            </p>
-          </mat-card-content>
-        </mat-card>
-        <mat-card class="card">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>title</mat-card-title>
-            <mat-card-subtitle>subtitle</mat-card-subtitle>
-          </mat-card-header>
-          <!-- <img mat-card-image [src]="member.url" alt="Photo of "> -->
-          <mat-card-content>
-            <p>
-                this is the content 
-            </p>
-          </mat-card-content>
-        </mat-card>
-        <mat-card class="card">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>title</mat-card-title>
-            <mat-card-subtitle>subtitle</mat-card-subtitle>
-          </mat-card-header>
-          <!-- <img mat-card-image [src]="member.url" alt="Photo of "> -->
-          <mat-card-content>
-            <p>
-                this is the content 
-            </p>
-          </mat-card-content>
-        </mat-card>
-        <mat-card class="card">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>title</mat-card-title>
-            <mat-card-subtitle>subtitle</mat-card-subtitle>
-          </mat-card-header>
-          <!-- <img mat-card-image [src]="member.url" alt="Photo of "> -->
-          <mat-card-content>
-            <p>
-                this is the content 
-            </p>
-          </mat-card-content>
-        </mat-card>
-        <mat-card class="card">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>title</mat-card-title>
-            <mat-card-subtitle>subtitle</mat-card-subtitle>
-          </mat-card-header>
-          <!-- <img mat-card-image [src]="member.url" alt="Photo of "> -->
-          <mat-card-content>
-            <p>
-                this is the content 
-            </p>
-          </mat-card-content>
-        </mat-card>
-        <mat-card class="card">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>title</mat-card-title>
-            <mat-card-subtitle>subtitle</mat-card-subtitle>
-          </mat-card-header>
-          <!-- <img mat-card-image [src]="member.url" alt="Photo of "> -->
-          <mat-card-content>
-            <p>
-                this is the content 
-            </p>
-          </mat-card-content>
+          <button class="first">BID</button>
         </mat-card>
       </div>
       <div class="hotItems">
