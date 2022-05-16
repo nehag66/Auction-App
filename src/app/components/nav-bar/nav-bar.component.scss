@@ -7,3 +7,8 @@
 .rightDiv {
     justify-content: end;
 }
+
+::ng-deep .add-cashlimit .modal-dialog {
+    max-width: 55%;
+    width: 55%;
+}

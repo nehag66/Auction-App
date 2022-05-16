@@ -13,12 +13,14 @@ import { LayoutComponent } from './layout/layout.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './components/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
-    NavBarComponent
+    NavBarComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { FormsModule } from '@angular/forms';
     NgbCollapseModule,
     FormsModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
