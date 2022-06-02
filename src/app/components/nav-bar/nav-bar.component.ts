@@ -29,4 +29,6 @@ export class NavBarComponent implements OnInit {
   modalRef.result.then((res) => {});
   }
 
+  
+
 }

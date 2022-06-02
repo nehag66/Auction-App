@@ -7,6 +7,7 @@ import { environment } from 'src/environments/environment';
 export class ConstantsService {
 
   getAllProducts = environment["stagingUrl"]+"items?sort=id"
+  registerUser = environment["stagingUrl"]+ "user/register"
 
   constructor() { }
 }

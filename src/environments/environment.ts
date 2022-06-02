@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  stagingUrl: 'http://localhost:8080/api/'
+  // stagingUrl: 'http://localhost:8080/api/'
+  stagingUrl: 'http://3.110.56.143/api/'
 };
 
 /*

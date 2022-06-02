@@ -15,12 +15,14 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
     NavBarComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

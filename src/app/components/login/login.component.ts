@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms'
+import { NgbModal, NgbModalOptions } from '@ng-bootstrap/ng-bootstrap';
+import { RegisterComponent } from '../register/register.component';
 
 @Component({
   selector: 'app-login',
@@ -17,7 +19,8 @@ export class LoginComponent implements OnInit {
   constructor( 
     private formBuilder: FormBuilder,
     private route: ActivatedRoute,
-    private router: Router,) { 
+    private router: Router,
+    public modalService: NgbModal) { 
   }
 
   ngOnInit(){
@@ -32,6 +35,19 @@ export class LoginComponent implements OnInit {
   }
 
   get f() { return this.loginForm.controls; }
+
+  registerModal() {
+    console.log("registerModal: ", "RegisterModal")
+    const modalRef = this.modalService.open(RegisterComponent, {
+      windowClass: "add-cashlimit",
+  });
+  // modalRef.componentInstance.data = hospital;
+
+  modalRef.componentInstance.passEntry.subscribe((receivedEntry) => {
+      // hospital.remark = receivedEntry;
+  });
+  modalRef.result.then((res) => {});
+  }
 
   onSubmit() {
       this.submitted = true;

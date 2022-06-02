@@ -45,5 +45,9 @@ export class CommonService {
       console.log("this.productDetail: ", this.productDetail)
     })
   }
+
+  registerUser(data) {
+    return this.http.postData(this.constants.registerUser, data);
+  }
 }
       
